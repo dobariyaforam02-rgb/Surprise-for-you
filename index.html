@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Our Little Secret ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="heart-bg" aria-hidden="true"></div>
+
+  <main class="screen">
+    <section class="card">
+      <div class="photo-side">
+        <div class="polaroid">
+          <div class="tape"></div>
+          <div class="bouquet" aria-hidden="true">
+            <span>🌹</span><span>🌹</span><span>🌹</span><span>🌹</span><span>🌹</span>
+            <i></i>
+          </div>
+          <img src="couple-photo.jpeg" alt="Our photo" />
+          <div class="caption">
+            <span class="little-hearts">♥ ♥</span>
+            <span>I love you</span><span class="red-heart">♥</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="passcode-side">
+        <h1>Enter passcode</h1>
+
+        <div class="dots" aria-label="Passcode">
+          <div class="dot-box" id="dot0">*</div>
+          <div class="dot-box" id="dot1">*</div>
+          <div class="dot-box" id="dot2">*</div>
+          <div class="dot-box" id="dot3">*</div>
+        </div>
+
+        <p class="message" id="message" aria-live="polite"></p>
+
+        <div class="keypad">
+          <button class="key" data-key="1">1</button>
+          <button class="key" data-key="2">2</button>
+          <button class="key" data-key="3">3</button>
+          <button class="key" data-key="4">4</button>
+          <button class="key" data-key="5">5</button>
+          <button class="key" data-key="6">6</button>
+          <button class="key" data-key="7">7</button>
+          <button class="key" data-key="8">8</button>
+          <button class="key" data-key="9">9</button>
+          <button class="key symbol" data-key="*">*</button>
+          <button class="key" data-key="0">0</button>
+          <button class="key symbol" data-key="#">#</button>
+        </div>
+
+        <div class="actions">
+          <button id="clearBtn" class="small-action">Clear</button>
+          <button id="backBtn" class="small-action">⌫</button>
+          <button id="enterBtn" class="enter-btn" aria-label="Enter">▶</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section id="secretPage" class="secret-page" hidden>
+    <div class="secret-content">
+      <div class="big-heart">♥</div>
+      <h2>Welcome to our little world ❤️</h2>
+      <p>You found the secret page.</p>
+      <button id="backToLock" class="return-btn">← Back</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
