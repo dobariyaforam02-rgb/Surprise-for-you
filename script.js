@@ -55,12 +55,11 @@ function clearAll() {
   updateBoxes();
 }
 
+
 function checkCode() {
   if (entered === CORRECT_CODE) {
     message.textContent = "";
-    mainScreen.hidden = true;
-    secretPage.hidden = false;
-    window.scrollTo(0, 0);
+    window.location.href = "page2.html";
   } else {
     message.textContent = "Incorrect passcode — try again";
     entered = "";
